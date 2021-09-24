@@ -13,7 +13,7 @@ const createNavbar = ({ title, navbarItems }) => {
   const navItems = document.createElement("div");
   navItems.classList.add("nav-items");
   // create items
-  for (let item in navbarItems) {
+  for (let item of navbarItems) {
     let itemSpan = document.createElement("span");
     itemSpan.classList.add("nav-item");
     itemSpan.textContent = item;
@@ -22,6 +22,7 @@ const createNavbar = ({ title, navbarItems }) => {
 
   nav.appendChild(homeTitle);
   nav.appendChild(navItems);
+  return nav;
 };
 
 export default createNavbar;
