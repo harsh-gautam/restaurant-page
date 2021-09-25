@@ -3,12 +3,20 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 20px;
+  padding: 30px 80px;
   background-color: #fff;
+}
+
+.logo {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }
 
 #navbar .home-title {
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
 }
 #navbar .nav-items {
   font-size: 1.1rem;

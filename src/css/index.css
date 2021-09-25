@@ -6,7 +6,6 @@
 body {
   min-height: 100vh;
   box-sizing: border-box;
-  margin: 0 150px;
 }
 
 #content {
@@ -17,10 +16,7 @@ body {
 }
 
 .home-image {
-  width: 550px;
-  transform: rotate(80deg);
-  height: 300px;
+  width: 40%;
   position: relative;
   top: 25%;
-  right: 1%;
 }

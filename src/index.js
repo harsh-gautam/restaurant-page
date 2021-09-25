@@ -1,11 +1,17 @@
 import createNavbar from "./navbar";
 import createHome from "./home";
 import "./css/index.css";
-import homeImage from "./images/wrap.png";
+import homeImage from "./images/food.png";
+import chefHat from "./images/chef-hat.png";
 
 const header = document.querySelector("#header");
+
+const hat = new Image();
+hat.src = chefHat;
+hat.classList.add("logo");
 const navbar = createNavbar({
-  title: "Rose",
+  logo: hat,
+  title: "Rose Kitchen",
   navbarItems: ["Home", "Menu", "About", "Contact"],
 });
 

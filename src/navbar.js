@@ -1,6 +1,6 @@
 import "./css/navbar.css";
 
-const createNavbar = ({ title, navbarItems }) => {
+const createNavbar = ({ logo, title, navbarItems }) => {
   const nav = document.createElement("nav");
   nav.id = "navbar";
 
@@ -9,6 +9,7 @@ const createNavbar = ({ title, navbarItems }) => {
   homeTitle.classList.add("home-title");
   let h1 = document.createElement("h1");
   h1.textContent = title;
+  homeTitle.appendChild(logo);
   homeTitle.appendChild(h1);
 
   // Navbar items
