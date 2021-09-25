@@ -10,6 +10,17 @@ body {
 }
 
 #content {
+  display: flex;
+  flex-direction: row;
   /* margin: 10px 150px; */
   height: 75vh;
+}
+
+.home-image {
+  width: 550px;
+  transform: rotate(80deg);
+  height: 300px;
+  position: relative;
+  top: 25%;
+  right: 1%;
 }

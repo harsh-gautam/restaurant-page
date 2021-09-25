@@ -1,4 +1,4 @@
-import homeImage from "./images/wrap.png";
+
 import "./css/home.css";
 
 const createHome = () => {
@@ -35,13 +35,6 @@ const createHome = () => {
   section.appendChild(highlightText);
   section.appendChild(descText);
   section.appendChild(btnGroup);
-
-  const image = new Image();
-  image.src = homeImage;
-  image.width = 200;
-  image.height = 400;
-
-  section.insertAdjacentElement("afterend", image);
 
   return section;
 };
