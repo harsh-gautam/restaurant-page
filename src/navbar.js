@@ -1,3 +1,5 @@
+import "./css/navbar.css";
+
 const createNavbar = ({ title, navbarItems }) => {
   const nav = document.createElement("nav");
   nav.id = "navbar";
