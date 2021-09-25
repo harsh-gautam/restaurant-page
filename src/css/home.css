@@ -68,3 +68,10 @@
   z-index: -1;
   border-radius: 5px;
 }
+
+.home-image {
+  width: 40%;
+  height: 400px;
+  position: relative;
+  top: 25%;
+}
