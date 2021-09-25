@@ -1,5 +1,6 @@
 import createNavbar from "./navbar";
 import createHome from "./home";
+import { createMenu } from "./menu";
 import "./css/index.css";
 import homeImage from "./images/food.png";
 import chefHat from "./images/chef-hat.png";
@@ -40,4 +41,6 @@ home.addEventListener("click", () => {
 const menu = document.querySelector("#menu");
 menu.addEventListener("click", () => {
   content.innerHTML = "";
+  const menu = createMenu();
+  content.appendChild(menu);
 });

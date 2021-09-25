@@ -1,0 +1,66 @@
+{
+  "Veg": [
+    {
+      "name": "Kadhai Paneer",
+      "price": "240",
+      "imageUrl": "./images/kadhai_paneer.jpg"
+    },
+    {
+      "name": "Paneer Lababdar",
+      "price": "279",
+      "imageUrl": "./images/paneer_lababdar.jpg"
+    },
+    {
+      "name": "Paneer Do Pyaza",
+      "price": "245",
+      "imageUrl": "./images/paneer_do_pyaza.jpg"
+    },
+    {
+      "name": "Shahi Paneer",
+      "price": "270",
+      "imageUrl": "./images/shahi_paneer.jpg"
+    },
+    {
+      "name": "Chola Bhatura",
+      "price": "119",
+      "imageUrl": "./images/chola_bhatura.jpg"
+    },
+    {
+      "name": "Veg Biryani with Raita",
+      "price": "139",
+      "imageUrl": "./images/veg_biryani.jpg"
+    }
+  ],
+  "Non-Veg": [
+    {
+      "name": "Chicken Curry",
+      "price": "340",
+      "imageUrl": "./images/chicken_curry.jpg"
+    },
+    {
+      "name": "Handi Chicken",
+      "price": "369",
+      "imageUrl": "./images/handi_chicken.jpg"
+    },
+    {
+      "name": "Chicken Shahi Korma",
+      "price": "369",
+      "imageUrl": "./images/chicken_shahi_korma.jpg"
+    },
+    {
+      "name": "Chicken Biryani",
+      "price": "400",
+      "imageUrl": "./images/chicken_biryani.jpg"
+    },
+    {
+      "name": "Egg Biryani",
+      "price": "200",
+      "imageUrl": "./images/egg_biryani.jpg"
+    },
+    {
+      "name": "Egg Chicken Roll",
+      "price": "110",
+      "imageUrl": "./images/egg_roll.jpg"
+    }
+  ]
+}
