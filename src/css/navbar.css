@@ -28,3 +28,63 @@
   font-size: 1.1rem;
   margin-right: 25px;
 }
+
+.toggle-button {
+  position: absolute;
+  right: 1rem;
+  top: 1.7rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 5px;
+  width: 100%;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    padding: 20px 30px;
+  }
+  #navbar .nav-items {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #navbar {
+    padding: 20px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-items {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-items.active {
+    opacity: 1;
+    height: auto;
+    overflow: none;
+  }
+
+  #navbar .nav-items .nav-item {
+    margin-right: 0;
+    padding: 10px;
+  }
+}

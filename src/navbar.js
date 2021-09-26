@@ -15,6 +15,7 @@ const createNavbar = ({ logo, title, navbarItems }) => {
   // Navbar items
   const navItems = document.createElement("div");
   navItems.classList.add("nav-items");
+
   // create items
   for (let item of navbarItems) {
     let itemSpan = document.createElement("span");
@@ -24,7 +25,16 @@ const createNavbar = ({ logo, title, navbarItems }) => {
     navItems.appendChild(itemSpan);
   }
 
+  //hamburger icon
+  const ham = document.createElement("span");
+  ham.classList.add("toggle-button");
+  ham.innerHTML = `<span class="bar"></span><span class="bar"></span><span class="bar"></span>`;
+  ham.addEventListener("click", () => {
+    navItems.classList.toggle("active");
+  });
+
   nav.appendChild(homeTitle);
+  nav.appendChild(ham);
   nav.appendChild(navItems);
   return nav;
 };
