@@ -29,6 +29,10 @@
   margin-right: 25px;
 }
 
+.active-nav {
+  border-bottom: 2px solid;
+}
+
 .toggle-button {
   position: absolute;
   right: 1rem;
@@ -85,6 +89,7 @@
 
   #navbar .nav-items .nav-item {
     margin-right: 0;
-    padding: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
   }
 }

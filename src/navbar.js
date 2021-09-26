@@ -20,6 +20,9 @@ const createNavbar = ({ logo, title, navbarItems }) => {
   for (let item of navbarItems) {
     let itemSpan = document.createElement("span");
     itemSpan.classList.add("nav-item");
+    if (item.split(" ").join("-").toLowerCase() == "home") {
+      itemSpan.classList.add("active-nav");
+    }
     itemSpan.textContent = item;
     itemSpan.id = item.split(" ").join("-").toLowerCase();
     navItems.appendChild(itemSpan);
