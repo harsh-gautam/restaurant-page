@@ -1,6 +1,7 @@
 import createNavbar from "./navbar";
 import createHome from "./home";
 import { createMenu } from "./menu";
+import createContact from "./contact";
 import "./css/index.css";
 import homeImage from "./images/food.png";
 import chefHat from "./images/chef-hat.png";
@@ -13,7 +14,7 @@ hat.classList.add("logo");
 const navbar = createNavbar({
   logo: hat,
   title: "Rose Kitchen",
-  navbarItems: ["Home", "Menu", "About", "Contact"],
+  navbarItems: ["Home", "Menu", "Contact", "About"],
 });
 
 header.appendChild(navbar);
@@ -32,15 +33,22 @@ function setupHome() {
 
 setupHome();
 
-const home = document.querySelector("#home");
-home.addEventListener("click", () => {
+const homeBtn = document.querySelector("#home");
+homeBtn.addEventListener("click", () => {
   content.innerHTML = "";
   setupHome();
 });
 
-const menu = document.querySelector("#menu");
-menu.addEventListener("click", () => {
+const menuBtn = document.querySelector("#menu");
+menuBtn.addEventListener("click", () => {
   content.innerHTML = "";
   const menu = createMenu();
   content.appendChild(menu);
+});
+
+const contactBtn = document.querySelector("#contact");
+contactBtn.addEventListener("click", () => {
+  content.innerHTML = "";
+  const contact = createContact();
+  content.appendChild(contact);
 });
