@@ -33,3 +33,12 @@
   margin: 20px 0;
   font-weight: 700;
 }
+
+@media screen and (max-width: 420px) {
+  .wrapper {
+    padding: 20px 20px;
+  }
+  .big-card {
+    width: 90%;
+  }
+}
