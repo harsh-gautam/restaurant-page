@@ -28,8 +28,8 @@ function setupHome() {
   image.classList.add("home-image");
 
   const home = createHome();
+  home.appendChild(image);
   content.appendChild(home);
-  content.appendChild(image);
 }
 
 setupHome();

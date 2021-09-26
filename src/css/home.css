@@ -1,3 +1,8 @@
+.home-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
 .section {
   width: 60%;
   height: 100%;
@@ -12,7 +17,8 @@
 }
 
 .section .highlight {
-  font-size: 4rem;
+  font-size: 3.5rem;
+  font-weight: 700;
   margin: 10px 0;
 }
 .section .description {
@@ -20,11 +26,12 @@
 }
 
 .btn-group {
-  position: absolute;
-  top: 75%;
+  margin-top: 20px;
+  position: relative;
 }
 
 .btn-group button {
+  position: relative;
   margin-right: 30px;
   padding: 10px 20px;
   font-size: 1rem;
@@ -60,7 +67,7 @@
   position: absolute;
   content: "";
   top: 0;
-  left: 155px;
+  left: -10px;
   font-size: 1rem;
   padding: 19px 20px;
   background-color: rgb(2, 141, 206);
@@ -74,4 +81,54 @@
   height: 400px;
   position: relative;
   top: 25%;
+}
+
+@media (max-width: 930px) {
+  .section .highlight {
+    font-size: 2.8rem;
+  }
+
+  .home-image {
+    height: 320px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 20px 30px;
+  }
+  .section h1 {
+    font-size: 1.6rem;
+  }
+  .section .highlight {
+    font-size: 2rem;
+  }
+  .home-image {
+    height: 280px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .home-wrapper {
+    flex-direction: column-reverse;
+  }
+  .section {
+    width: initial;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+  }
+  .section h1 {
+    font-size: 1.8rem;
+  }
+  .section .highlight {
+    font-size: 2.4rem;
+  }
+  .section .description {
+    padding: 0 10px;
+    word-break: break-word;
+  }
+  .home-image {
+    width: 100%;
+    top: 0;
+  }
 }

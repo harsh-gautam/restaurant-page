@@ -1,7 +1,8 @@
-
 import "./css/home.css";
 
 const createHome = () => {
+  const div = document.createElement("div");
+  div.classList.add("home-wrapper");
   const welcomeText = document.createElement("h1");
   welcomeText.textContent = "Welcome to Rose Kitchen";
 
@@ -35,8 +36,9 @@ const createHome = () => {
   section.appendChild(highlightText);
   section.appendChild(descText);
   section.appendChild(btnGroup);
+  div.appendChild(section);
 
-  return section;
+  return div;
 };
 
 export default createHome;
