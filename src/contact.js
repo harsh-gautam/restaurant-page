@@ -1,4 +1,4 @@
-import "./css/contact.css";
+import "./css/extra.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 const createContact = () => {
