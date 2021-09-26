@@ -5,6 +5,7 @@ import createContact from "./contact";
 import "./css/index.css";
 import homeImage from "./images/food.png";
 import chefHat from "./images/chef-hat.png";
+import createAbout from "./about";
 
 // Setup Navbar
 const header = document.querySelector("#header");
@@ -51,4 +52,10 @@ contactBtn.addEventListener("click", () => {
   content.innerHTML = "";
   const contact = createContact();
   content.appendChild(contact);
+});
+
+const aboutBtn = document.querySelector("#about");
+aboutBtn.addEventListener("click", () => {
+  content.innerHTML = "";
+  content.appendChild(createAbout());
 });
