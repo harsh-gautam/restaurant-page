@@ -21,6 +21,8 @@ const navbar = createNavbar({
 header.appendChild(navbar);
 
 const content = document.querySelector("#content");
+const hamBtn = document.querySelector(".toggle-button");
+const navItems = document.querySelectorAll(".nav-item");
 
 function setupHome() {
   const image = new Image();
@@ -34,28 +36,63 @@ function setupHome() {
 
 setupHome();
 
+function markActiveNav(target) {
+  navItems.forEach((item) => {
+    console.log(item);
+    item.classList.remove("active-nav");
+    if (item === target) {
+      target.classList.add("active-nav");
+    }
+  });
+}
+
 const homeBtn = document.querySelector("#home");
-homeBtn.addEventListener("click", () => {
-  content.innerHTML = "";
-  setupHome();
+homeBtn.addEventListener("click", (e) => {
+  content.style.opacity = 0;
+  hamBtn.click();
+  markActiveNav(e.target);
+  setTimeout(() => {
+    content.innerHTML = "";
+    setupHome();
+    content.style.opacity = 1;
+  }, 300);
 });
 
 const menuBtn = document.querySelector("#menu");
-menuBtn.addEventListener("click", () => {
-  content.innerHTML = "";
-  const menu = createMenu();
-  content.appendChild(menu);
+menuBtn.addEventListener("click", (e) => {
+  content.style.opacity = 0;
+  hamBtn.click();
+  markActiveNav(e.target);
+  setTimeout(() => {
+    content.innerHTML = "";
+    const menu = createMenu();
+    content.appendChild(menu);
+    content.style.opacity = 1;
+  }, 300);
 });
 
 const contactBtn = document.querySelector("#contact");
-contactBtn.addEventListener("click", () => {
-  content.innerHTML = "";
-  const contact = createContact();
-  content.appendChild(contact);
+contactBtn.addEventListener("click", (e) => {
+  content.style.opacity = 0;
+  hamBtn.click();
+  markActiveNav(e.target);
+  setTimeout(() => {
+    content.innerHTML = "";
+    const contact = createContact();
+    content.appendChild(contact);
+    content.style.opacity = 1;
+  }, 300);
 });
 
 const aboutBtn = document.querySelector("#about");
-aboutBtn.addEventListener("click", () => {
-  content.innerHTML = "";
-  content.appendChild(createAbout());
+aboutBtn.addEventListener("click", (e) => {
+  content.style.opacity = 0;
+
+  hamBtn.click();
+  markActiveNav(e.target);
+  setTimeout(() => {
+    content.innerHTML = "";
+    content.appendChild(createAbout());
+    content.style.opacity = 1;
+  }, 300);
 });

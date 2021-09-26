@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Poppins:wght@200;400;500;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -13,4 +16,5 @@ body {
   flex-direction: row;
   /* margin: 10px 150px; */
   height: 75vh;
+  transition: opacity 0.3s ease-in-out;
 }
