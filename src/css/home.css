@@ -14,6 +14,7 @@
 
 .section h1 {
   font-size: 2rem;
+  font-family: "Dancing Script", "sans-serif";
 }
 
 .section .highlight {
@@ -115,15 +116,16 @@
     width: initial;
     justify-content: center;
     align-items: center;
-    padding: 20px 10px;
+    padding: 0 10px;
   }
   .section h1 {
     font-size: 1.8rem;
   }
   .section .highlight {
-    font-size: 2.4rem;
+    font-size: 2rem;
   }
   .section .description {
+    font-size: 1rem;
     padding: 0 10px;
     word-break: break-word;
   }

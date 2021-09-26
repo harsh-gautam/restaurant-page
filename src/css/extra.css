@@ -31,7 +31,7 @@
 
 .creator {
   margin: 20px 0;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 420px) {
@@ -40,5 +40,8 @@
   }
   .big-card {
     width: 90%;
+  }
+  .big-card p {
+    font-size: 1rem;
   }
 }
